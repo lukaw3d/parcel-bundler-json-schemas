@@ -98,5 +98,7 @@
       "type": "string"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "title": "JSON schema for .parcelrc files",
+  "$schema": "http://json-schema.org/draft-04/schema#"
 }
