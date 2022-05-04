@@ -12,3 +12,23 @@ With this, you can get code-completion in `.parcelrc`:
   "extends": "@parcel/config-default"
 }
 ```
+
+And `targets` in `package.json`:
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/lukaw3d/parcel-bundler-json-schemas/main/package_schema.json",
+  "scripts": {
+    "start": "parcel --target web --dist-dir build"
+  },
+  "devDependencies": {
+    "parcel": "2.3.2"
+  },
+  "targets": {
+    "web": {
+      "source": "src/index.html",
+      "context": "browser",
+      "scopeHoist": false
+    }
+  }
+}
+```

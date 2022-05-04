@@ -1,0 +1,20 @@
+{
+  "title": "JSON schema for NPM package.json files with parcel bundler 'targets'",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "allOf": [
+    {
+      "$ref": "https://json.schemastore.org/package.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "targets": {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "https://raw.githubusercontent.com/lukaw3d/parcel-bundler-json-schemas/main/package_target_schema.json"
+          }
+        }
+      }
+    }
+  ]
+}
