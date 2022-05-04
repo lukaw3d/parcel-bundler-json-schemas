@@ -4,7 +4,6 @@ const targetDescriptorSchema = require('@parcel/core/lib/TargetDescriptor.schema
 
 parcelConfigSchema.title = 'JSON schema for .parcelrc files'
 parcelConfigSchema.$schema = 'http://json-schema.org/draft-04/schema#'
-parcelConfigSchema.properties.$schema = { type: 'string' }
 
 fs.writeFileSync('config_schema.json', JSON.stringify(parcelConfigSchema, null, 2), 'utf-8')
 fs.writeFileSync('package_target_schema.json', JSON.stringify(targetDescriptorSchema, null, 2), 'utf-8')
