@@ -1,0 +1,99 @@
+{
+  "type": "object",
+  "properties": {
+    "extends": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ]
+    },
+    "bundler": {
+      "type": "string"
+    },
+    "resolvers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "transformers": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "validators": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "namers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "packagers": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "optimizers": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "compressors": {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "reporters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "runtimes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "filePath": {
+      "type": "string"
+    },
+    "resolveFrom": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
