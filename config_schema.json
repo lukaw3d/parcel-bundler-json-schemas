@@ -93,6 +93,9 @@
     },
     "resolveFrom": {
       "type": "string"
+    },
+    "$schema": {
+      "type": "string"
     }
   },
   "additionalProperties": false
