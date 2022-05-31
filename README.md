@@ -6,19 +6,15 @@ Dump ParcelConfig.schema.js into JSON
 - package_target_schema.json from https://github.com/parcel-bundler/parcel/blob/v2/packages/core/core/src/TargetDescriptor.schema.js#L27
 - package_schema.json is handcrafted
 
-With this, you can get code-completion in `.parcelrc` with VSCode setting:
+With this, you can get code-completion in `.parcelrc`:
 ```json
 {
-  "json.schemas": [
-    {
-      "url": "https://raw.githubusercontent.com/lukaw3d/parcel-bundler-json-schemas/main/config_schema.json",
-      "fileMatch": [".parcelrc"],
-    }
-  ]
+  "$schema": "https://raw.githubusercontent.com/lukaw3d/parcel-bundler-json-schemas/main/config_schema.json",
+  "extends": "@parcel/config-default"
 }
 ```
 
-And `targets` in `package.json`:
+And in `targets` in `package.json`:
 ```json
 {
   "$schema": "https://raw.githubusercontent.com/lukaw3d/parcel-bundler-json-schemas/main/package_schema.json",
