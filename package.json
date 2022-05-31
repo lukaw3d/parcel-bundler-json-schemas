@@ -3,6 +3,6 @@
     "start": "node main.js"
   },
   "devDependencies": {
-    "parcel": "^2.5.0"
+    "parcel": "^2.6.0"
   }
 }
