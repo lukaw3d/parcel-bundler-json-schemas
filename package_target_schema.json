@@ -9,7 +9,9 @@
         "web-worker",
         "electron-main",
         "electron-renderer",
-        "service-worker"
+        "service-worker",
+        "react-server",
+        "react-client"
       ]
     },
     "includeNodeModules": {
